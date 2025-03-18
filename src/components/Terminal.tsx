@@ -37,6 +37,7 @@ const Terminal: React.FC = () => {
                     "hi i'm maneesh, a computer science graduate from the University of Guelph.",
                     "i'm passionate about backend development, devtooling, infrastructure, and distributed systems.",
                     "you can reach me at <a href='mailto:m.mwije1@proton.me' target='_blank'>m.mwije1@proton.me</a> or my <a href='https://www.linkedin.com/in/maneeshwije/' target='_blank'>linkedin</a>.",
+                    "you can also view my projects by typing in 'github' :)",
                     "fun fact: i've done boulder problems up to V10",
                     `<div style="display: flex; gap: 10px; justify-content: left;">
                         <img src="${me}" alt="Maneesh portrait" class="shadow-lg mt-4 mb-4" style="width: 300px; height: 300px; object-fit: cover;" />
