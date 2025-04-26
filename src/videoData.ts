@@ -1,42 +1,62 @@
 export const videos = [
     {
+        title: "purple tape @ grotto",
+        youtubeId: "LhWEcudGWu8",
+    },
+    {
         title: "no u-turn @ niagra glen",
         youtubeId: "Op_a7bZr1TY",
     },
     {
-        title: "aspire climbing v6-v7",
+        title: "v6-v7 @ aspire",
         youtubeId: "V7GspeNw-08",
     },
     {
-        title: "aspire climbing v8-v9",
+        title: "v10+ @ aspire",
+        youtubeId: "N4m7oUkuV_s",
+    },
+    {
+        title: "v8-v9 @ aspire",
         youtubeId: "4AP6Nd_dt7w",
     },
     {
-        title: "aspire climbing v6-v7",
+        title: "v6-v7 @ aspire",
         youtubeId: "B84LIXdvmeQ",
     },
     {
-        title: "aspire climbing v8-v9",
+        title: "v8-v9 @ aspire",
         youtubeId: "OrkXW7PPly4",
     },
     {
-        title: "grotto purple tape",
+        title: "purple tape @ grotto",
         youtubeId: "rpjXpNAY90Y",
     },
     {
-        title: "grotto purple tape",
+        title: "purple tape @ grotto",
         youtubeId: "GrEiS0bF6JA",
     },
     {
-        title: "random hub v5 campus",
+        title: "random v5 campus @ hub",
         youtubeId: "0HQHk6KXNVk",
     },
     {
-        title: "grotto competition boulder",
+        title: "competition boulder @ grotto",
         youtubeId: "sHjDVEDqXA8",
     },
     {
-        title: "climbers rock v9",
+        title: "v9 @ climbers rock",
         youtubeId: "3kkxld58VWg",
+    },
+    {
+        title: "v8-v9 @ aspire",
+        youtubeId: "ug-2SoBz4oc",
+    },
+    {
+        title: "v8-v9 @ aspire",
+        youtubeId: "xX-78kKBkuM",
+    },
+    {
+        title: "v8 @ climbers rock",
+        youtubeId: "rh7ACg_QsbA",
     },
 ];
