@@ -1,5 +1,21 @@
 export const videos = [
     {
+        title: "v8-v9 @ aspire",
+        youtubeId: "0jWhAL5URec",
+    },
+    {
+        title: "v8-v9 @ aspire",
+        youtubeId: "aYoiEKQy_1U",
+    },
+    {
+        title: "v8-v9 @ aspire",
+        youtubeId: "InUt1AmKRrA",
+    },
+    {
+        title: "v8-v9 @ aspire",
+        youtubeId: "IsoUglRNaMc",
+    },
+    {
         title: "purple tape @ grotto",
         youtubeId: "LhWEcudGWu8",
     },
@@ -18,10 +34,6 @@ export const videos = [
     {
         title: "v8-v9 @ aspire",
         youtubeId: "4AP6Nd_dt7w",
-    },
-    {
-        title: "v6-v7 @ aspire",
-        youtubeId: "B84LIXdvmeQ",
     },
     {
         title: "v8-v9 @ aspire",
