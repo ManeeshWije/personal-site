@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import me from "../assets/me.jpg";
-import climb from "../assets/climb.jpg";
+import climb from "../assets/2.jpg";
 import { videos } from "../videoData";
 import resume from "../assets/resume.pdf";
 
@@ -57,11 +57,11 @@ const Terminal: React.FC = () => {
             case "about":
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    "hi i'm maneesh, a computer science graduate from the University of Guelph.",
-                    "i'm passionate about backend development, devtooling, infrastructure, and distributed systems.",
-                    "you can reach me at <a href='mailto:m.mwije1@proton.me' target='_blank'>m.mwije1@proton.me</a> or my <a href='https://www.linkedin.com/in/maneeshwije/' target='_blank'>linkedin</a>.",
-                    "you can also view my projects by typing in 'github' :)",
-                    "fun fact: i've done boulder problems up to V10, you can type 'climbing' to learn more",
+                    "Hi I'm Maneesh, a computer science graduate from the University of Guelph.",
+                    "I'm passionate about backend development, devtooling, infrastructure, and distributed systems.",
+                    "You can reach me at <a href='mailto:m.mwije1@proton.me' target='_blank'>m.mwije1@proton.me</a> or my <a href='https://www.linkedin.com/in/maneeshwije/' target='_blank'>linkedin</a>.",
+                    "You can also view my projects by typing in 'github' :)",
+                    "Fun fact: I've done boulder problems up to V10, you can type 'climbing' to learn more",
                     `<div style="display: flex; gap: 10px; justify-content: left;">
                         <img src="${me}" alt="Maneesh portrait" class="shadow-lg mt-4 mb-4" style="width: 300px; height: 300px; object-fit: cover;" />
                         <img src="${climb}" alt="Maneesh climbing a boulder" class="shadow-lg mt-4 mb-4" style="width: 300px; height: 300px; object-fit: cover;" />
@@ -74,34 +74,47 @@ const Terminal: React.FC = () => {
             case "blog":
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    "nothing to see here...yet",
+                    "Nothing to see here...yet",
                 ]);
                 break;
             case "climbing":
                 setOutput((prevOutput) => [
                     ...prevOutput,
-                    "some of my bouldering sessions, click to watch:",
+                    `I spend most of my time board climbing these days, you can follow me on the
+                    <a href='https://tensionclimbing.com/products/tension-board-2' target='_blank'>Tension</a>
+                    and <a href='https://settercloset.com/en-ca/collections/kilter-board' target='_blank'>Kilter</a>
+                    board apps to view my progress! (username: maneeshwije)`,
+                    "Some of my bouldering sessions, click to watch:",
                 ]);
 
-                setOutput((prevOutput) => [
+                setOutput(prevOutput => [
                     ...prevOutput,
-                    `<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
-                        ${videos
-                            .map(
-                                (video) => `
-                            <div class="video-thumbnail py-2">
-                                <p>${video.title}</p>
-                                <img 
-                                    src="https://img.youtube.com/vi/${video.youtubeId}/0.jpg" 
-                                    alt="${video.title}" 
-                                    class="cursor-pointer rounded-lg shadow-md hover:scale-105 transition-transform duration-300" 
-                                    onclick="window.openVideoModal('${video.youtubeId}')"
-                                />
-                            </div>
-                        `,
-                            )
-                            .join("")}
-                    </div>`,
+                    `
+                  <div 
+                    style="
+                      display: grid;
+                      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+                      gap: 16px;
+                      margin-top: 16px;
+                    "
+                  >
+                    ${videos
+                        .map(
+                            v => `
+                        <div class="video-thumbnail">
+                          <p>${v.title}</p>
+                          <img
+                            src="https://img.youtube.com/vi/${v.youtubeId}/0.jpg"
+                            alt="${v.title}"
+                            style="width: 100%; border-radius: 10px; cursor: pointer;"
+                            onclick="window.openVideoModal('${v.youtubeId}')"
+                          />
+                        </div>
+                      `
+                        )
+                        .join("")}
+                  </div>
+                `
                 ]);
                 break;
             case "resume":
