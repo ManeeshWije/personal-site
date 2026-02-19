@@ -58,7 +58,8 @@ const Terminal: React.FC = () => {
                 setOutput((prevOutput) => [
                     ...prevOutput,
                     "Hi I'm Maneesh, a computer science graduate from the University of Guelph.",
-                    "I'm passionate about backend development, devtooling, infrastructure, and distributed systems.",
+                    "I currently work as a software developer at <a href='https://opensports.ca/' target='_blank'>OpenSports</a> where we build software to help sports organizations run more efficiently.",
+                    "I'm passionate about backend development, <a href='https://github.com/ManeeshWije/homelab' target='_blank'>self hosting</a>, infrastructure, and distributed systems.",
                     "You can reach me at <a href='mailto:m.mwije1@proton.me' target='_blank'>m.mwije1@proton.me</a> or my <a href='https://www.linkedin.com/in/maneeshwije/' target='_blank'>linkedin</a>.",
                     "You can also view my projects by typing in 'github' :)",
                     "Fun fact: I've done boulder problems up to V10, you can type 'climbing' to learn more",
@@ -70,12 +71,6 @@ const Terminal: React.FC = () => {
                 break;
             case "github":
                 window.open("https://www.github.com/ManeeshWije", "_blank");
-                break;
-            case "blog":
-                setOutput((prevOutput) => [
-                    ...prevOutput,
-                    "Nothing to see here...yet",
-                ]);
                 break;
             case "climbing":
                 setOutput((prevOutput) => [
@@ -135,7 +130,7 @@ const Terminal: React.FC = () => {
         <div>
             <div>
                 <h1 className="font-bold text-lg">
-                    type 'about', 'github', 'blog', 'climbing', 'resume', or
+                    type 'about', 'climbing', 'github', 'resume', or
                     clear the screen with 'clear'.
                 </h1>
             </div>
