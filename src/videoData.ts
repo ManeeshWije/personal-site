@@ -1,11 +1,19 @@
 export const videos = [
     {
+        title: "(TB2) The Silver Mountain v10 @ 40°",
+        youtubeId: "lI3h1sIJa0U"
+    },
+    {
         title: "v10+ @ aspire 2",
         youtubeId: "K6ixlZB7dxs"
     },
     {
-        title: "v10+ @ aspire 2",
+        title: "v10+ @ aspire 2 (soft)",
         youtubeId: "jbQi2_Qpy3c",
+    },
+    {
+        title: "v8-v9 @ aspire 2",
+        youtubeId: "U364pXJ9E84"
     },
     {
         title: "v8-v9 @ aspire 2",
@@ -32,12 +40,8 @@ export const videos = [
         youtubeId: "4yx3TEhUXj4",
     },
     {
-        title: "v10+ @ aspire",
+        title: "v10+ @ aspire (soft)",
         youtubeId: "N4m7oUkuV_s",
-    },
-    {
-        title: "v8-v9 @ aspire",
-        youtubeId: "n2q56SCJddE",
     },
     {
         title: "v8-v9 @ aspire",
@@ -60,16 +64,8 @@ export const videos = [
         youtubeId: "GrEiS0bF6JA",
     },
     {
-        title: "purple tape @ grotto",
-        youtubeId: "LhWEcudGWu8",
-    },
-    {
         title: "comp boulder @ grotto",
         youtubeId: "sHjDVEDqXA8",
-    },
-    {
-        title: "v9 @ climbers rock",
-        youtubeId: "11aqG_tjF9g",
     },
     {
         title: "v9 @ climbers rock",
@@ -84,7 +80,7 @@ export const videos = [
         youtubeId: "0HQHk6KXNVk",
     },
     {
-        title: "no u-turn @ niagra glen",
+        title: "no u-turn v3 @ niagra glen",
         youtubeId: "Op_a7bZr1TY",
     },
 ];
