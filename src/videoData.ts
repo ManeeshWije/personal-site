@@ -1,5 +1,9 @@
 export const videos = [
     {
+        title: "(TB2) Colder Shoulder v10 @ 40°",
+        youtubeId: "QOHjUhEoasM",
+    },
+    {
         title: "(TB2) I Am Made Of Chalk v10 @ 40°",
         youtubeId: "tPaMNM-Fzrc"
     },
@@ -62,10 +66,6 @@ export const videos = [
     {
         title: "v9 @ climbers rock",
         youtubeId: "3kkxld58VWg",
-    },
-    {
-        title: "v8 @ climbers rock",
-        youtubeId: "rh7ACg_QsbA",
     },
     {
         title: "random v5 campus @ hub",
