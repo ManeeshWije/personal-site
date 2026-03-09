@@ -37,39 +37,11 @@ export const videos = [
     },
     {
         title: "v8-v9 @ aspire",
-        youtubeId: "er0-n5akMDw",
-    },
-    {
-        title: "v8-v9 @ aspire",
         youtubeId: "3-gCI4bch54",
     },
     {
         title: "v5 campus @ aspire (fail)",
         youtubeId: "4yx3TEhUXj4",
-    },
-    {
-        title: "v10+ @ aspire (soft)",
-        youtubeId: "N4m7oUkuV_s",
-    },
-    {
-        title: "purple tape @ grotto",
-        youtubeId: "rpjXpNAY90Y",
-    },
-    {
-        title: "purple tape @ grotto",
-        youtubeId: "GrEiS0bF6JA",
-    },
-    {
-        title: "comp boulder @ grotto",
-        youtubeId: "sHjDVEDqXA8",
-    },
-    {
-        title: "v9 @ climbers rock",
-        youtubeId: "3kkxld58VWg",
-    },
-    {
-        title: "random v5 campus @ hub",
-        youtubeId: "0HQHk6KXNVk",
     },
     {
         title: "no u-turn v3 @ niagra glen",
