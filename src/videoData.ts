@@ -1,5 +1,9 @@
 export const videos = [
     {
+        title: "(TB2) chickenconbo v10 @ 45°",
+        youtubeId: "O7h4nXbIFeI"
+    },
+    {
         title: "(TB2) Marceline v10 @ 45°",
         youtubeId: "OZMiE1Li9E0"
     },
@@ -34,10 +38,6 @@ export const videos = [
     {
         title: "v8-v9 @ aspire",
         youtubeId: "1kN0f2_NCV4"
-    },
-    {
-        title: "v6-v7 @ aspire",
-        youtubeId: "wgbU87khqfM"
     },
     {
         title: "v5 campus @ aspire (fail)",
