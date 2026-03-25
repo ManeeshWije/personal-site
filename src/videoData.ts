@@ -1,5 +1,9 @@
 export const videos = [
     {
+        title: "(TB2) Hybrid Moments v10 @ 45°",
+        youtubeId: "Axr34tUlI8I"
+    },
+    {
         title: "(TB2) chickenconbo v10 @ 45°",
         youtubeId: "O7h4nXbIFeI"
     },
