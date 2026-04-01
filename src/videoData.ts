@@ -1,5 +1,9 @@
 export const videos = [
     {
+        title: "v10+ @ aspire",
+        youtubeId: "4RhQpSLj5lA"
+    },
+    {
         title: "(TB2) Hybrid Moments v10 @ 45°",
         youtubeId: "Axr34tUlI8I"
     },
@@ -38,14 +42,6 @@ export const videos = [
     {
         title: "v10+ @ aspire",
         youtubeId: "K6ixlZB7dxs"
-    },
-    {
-        title: "v8-v9 @ aspire",
-        youtubeId: "1kN0f2_NCV4"
-    },
-    {
-        title: "v5 campus @ aspire (fail)",
-        youtubeId: "4yx3TEhUXj4",
     },
     {
         title: "no u-turn v3 @ niagra glen",
