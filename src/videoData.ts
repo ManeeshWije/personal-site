@@ -1,5 +1,9 @@
 export const videos = [
     {
+        title: "(TB2) Megos said soft🐝 v11? @ 40°",
+        youtubeId: "6fuqgsohJ9w"
+    },
+    {
         title: "v10+ @ aspire",
         youtubeId: "4RhQpSLj5lA"
     },
