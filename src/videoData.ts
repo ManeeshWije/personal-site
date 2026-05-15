@@ -1,5 +1,9 @@
 export const videos = [
     {
+        title: "(TB2) Pumpkin King v11? @ 40°",
+        youtubeId: "X4WT5s8Up7E"
+    },
+    {
         title: "(TB2) Megos said soft🐝 v11? @ 40°",
         youtubeId: "6fuqgsohJ9w"
     },
@@ -20,10 +24,6 @@ export const videos = [
         youtubeId: "OZMiE1Li9E0"
     },
     {
-        title: "(TB2) yaoooo v10 @ 45°",
-        youtubeId: "X_FbQYBysGY"
-    },
-    {
         title: "(TB2) Pagan Practice v10 @ 50°",
         youtubeId: "VpUk93uWxoE"
     },
@@ -34,10 +34,6 @@ export const videos = [
     {
         title: "(TB2) Colder Shoulder v10 @ 40°",
         youtubeId: "QOHjUhEoasM",
-    },
-    {
-        title: "(TB2) I Am Made Of Chalk v10 @ 40°",
-        youtubeId: "tPaMNM-Fzrc"
     },
     {
         title: "(TB2) The Silver Mountain v10 @ 40°",
