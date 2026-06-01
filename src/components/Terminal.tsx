@@ -60,7 +60,7 @@ const Terminal: React.FC = () => {
                     "Hi I'm Maneesh, a computer science graduate from the University of Guelph.",
                     "I currently work as a software developer at <a href='https://opensports.ca/' target='_blank'>OpenSports</a> where we build software to help sports organizations run more efficiently.",
                     "I'm passionate about backend development, infrastructure, and distributed systems.",
-                    "You can reach me at <a href='mailto:m.mwije1@proton.me' target='_blank'>m.mwije1@proton.me</a> or my <a href='https://www.linkedin.com/in/maneeshwije/' target='_blank'>linkedin</a>.",
+                    "You can reach me at <a href='mailto:maneesh@wijeproject.com' target='_blank'>maneesh@wijeproject.com</a> or my <a href='https://www.linkedin.com/in/maneeshwije/' target='_blank'>linkedin</a>.",
                     "You can also view my projects by typing in 'github' :)",
                     "Fun fact: I've done boulder problems up to V11, you can type 'climbing' to learn more.",
                     `<div style="display: flex; gap: 10px; justify-content: left;">
