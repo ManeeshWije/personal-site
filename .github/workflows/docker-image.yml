@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+
   pull_request:
     branches:
       - master
@@ -17,18 +18,19 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Install Nix
-        uses: cachix/install-nix-action@v31
-        with:
-          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+        uses: DeterminateSystems/nix-installer-action@v21
 
       - name: Check flake
         run: nix flake check
 
-      - name: Build container
-        run: nix build .#image
+      - name: Build OCI image with Nix
+        run: nix build .#image --print-build-logs
+
+      - name: Load image into Docker daemon
+        run: nix run .#image.copyToDockerDaemon
 
       - name: Log in to Docker Hub
         if: github.event_name == 'push'
@@ -37,6 +39,12 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Push container to Docker Hub
+      - name: Push image tags
         if: github.event_name == 'push'
-        run: nix run .#image.copyToRegistry
+        env:
+          IMAGE: maneeshwije/personal-website
+        run: |
+          docker tag "$IMAGE:latest" "$IMAGE:${{ github.sha }}"
+
+          docker push "$IMAGE:latest"
+          docker push "$IMAGE:${{ github.sha }}"
