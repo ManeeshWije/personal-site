@@ -20,10 +20,7 @@ const Terminal: React.FC = () => {
 
     useEffect(() => {
         document.addEventListener("click", () => inputRef.current?.focus());
-        return () =>
-            document.removeEventListener("click", () =>
-                inputRef.current?.focus(),
-            );
+        return () => document.removeEventListener("click", () => inputRef.current?.focus());
     }, []);
 
     useEffect(() => {
@@ -59,7 +56,7 @@ const Terminal: React.FC = () => {
                     ...prevOutput,
                     "Hi I'm Maneesh, a computer science graduate from the University of Guelph.",
                     "I currently work as a software developer at <a href='https://opensports.ca/' target='_blank'>OpenSports</a> where we build software to help sports organizations run more efficiently.",
-                    "I'm passionate about backend development, infrastructure, and distributed systems.",
+                    "I'm passionate about backend development, <a href='https://github.com/ManeeshWije/nix-config' target='_blank'>self hosting</a>, and distributed systems.",
                     "You can reach me at <a href='mailto:maneesh@wijeproject.com' target='_blank'>maneesh@wijeproject.com</a> or my <a href='https://www.linkedin.com/in/maneeshwije/' target='_blank'>linkedin</a>.",
                     "You can also view my projects by typing in 'github' :)",
                     "Fun fact: I've done boulder problems up to V11, you can type 'climbing' to learn more.",
@@ -82,7 +79,7 @@ const Terminal: React.FC = () => {
                     "Some of my bouldering sessions, click to watch:",
                 ]);
 
-                setOutput(prevOutput => [
+                setOutput((prevOutput) => [
                     ...prevOutput,
                     `
                   <div 
@@ -95,7 +92,7 @@ const Terminal: React.FC = () => {
                   >
                     ${videos
                         .map(
-                            v => `
+                            (v) => `
                         <div class="video-thumbnail">
                           <p>${v.title}</p>
                           <img
@@ -105,11 +102,11 @@ const Terminal: React.FC = () => {
                             onclick="window.openVideoModal('${v.youtubeId}')"
                           />
                         </div>
-                      `
+                      `,
                         )
                         .join("")}
                   </div>
-                `
+                `,
                 ]);
                 break;
             case "resume":
@@ -119,10 +116,7 @@ const Terminal: React.FC = () => {
                 setOutput([]);
                 break;
             default:
-                setOutput((prevOutput) => [
-                    ...prevOutput,
-                    `Command not found: ${command}`,
-                ]);
+                setOutput((prevOutput) => [...prevOutput, `Command not found: ${command}`]);
         }
     };
 
@@ -130,16 +124,12 @@ const Terminal: React.FC = () => {
         <div>
             <div>
                 <h1 className="font-bold text-lg">
-                    type 'about', 'climbing', 'github', 'resume', or
-                    clear the screen with 'clear'.
+                    type 'about', 'climbing', 'github', 'resume', or clear the screen with 'clear'.
                 </h1>
             </div>
             <div ref={terminalRef} className="output-container">
                 {output.map((line, index) => (
-                    <div
-                        key={index}
-                        dangerouslySetInnerHTML={{ __html: line }}
-                    />
+                    <div key={index} dangerouslySetInnerHTML={{ __html: line }} />
                 ))}
             </div>
             <div className="flex flex-row w-full relative">
@@ -194,10 +184,7 @@ const Terminal: React.FC = () => {
                         }}
                         onClick={(e) => e.stopPropagation()}
                     >
-                        <div
-                            className="w-full relative"
-                            style={{ height: "calc(90vh - 32px)" }}
-                        >
+                        <div className="w-full relative" style={{ height: "calc(90vh - 32px)" }}>
                             <iframe
                                 className="rounded-lg"
                                 style={{
