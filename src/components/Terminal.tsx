@@ -85,7 +85,7 @@ const Terminal: React.FC = () => {
                   <div 
                     style="
                       display: grid;
-                      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+                      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
                       gap: 16px;
                       margin-top: 16px;
                     "
