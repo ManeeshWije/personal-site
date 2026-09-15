@@ -76,7 +76,7 @@
             then "arm64"
             else throw "Unsupported system: ${system}";
 
-          copyToRoot = site;
+          copyToRoot = [site pkgs.busybox];
 
           config = {
             WorkingDir = "/app";
