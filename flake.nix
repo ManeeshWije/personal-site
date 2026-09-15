@@ -95,6 +95,7 @@
             Env = [
               "HOME=/tmp"
               "NODE_ENV=production"
+              "__VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS=wijeproject.com,www.wijeproject.com"
             ];
 
             ExposedPorts = {
