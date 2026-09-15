@@ -57,10 +57,9 @@
             mkdir -p $out/app
 
             cp package.json $out/app/
-            cp -r dist $out/app/
+            cp vite.config.ts $out/app/
 
-            # Vite is a dev dependency, but it is required at runtime
-            # because the container runs `npm run preview`.
+            cp -r dist $out/app/
             cp -R node_modules $out/app/node_modules
 
             runHook postInstall
@@ -86,6 +85,8 @@
               "run"
               "preview"
               "--"
+              "--config"
+              "/app/vite.config.ts"
               "--host"
               "0.0.0.0"
               "--port"
@@ -95,7 +96,6 @@
             Env = [
               "HOME=/tmp"
               "NODE_ENV=production"
-              "__VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS=wijeproject.com,www.wijeproject.com"
             ];
 
             ExposedPorts = {
