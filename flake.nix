@@ -61,7 +61,7 @@
 
             # Vite is a dev dependency, but it is required at runtime
             # because the container runs `npm run preview`.
-            cp -RL node_modules $out/app/node_modules
+            cp -R node_modules $out/app/node_modules
 
             runHook postInstall
           '';
