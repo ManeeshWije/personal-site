@@ -13,10 +13,12 @@
   outputs = {
     nixpkgs,
     nix2container,
+    self,
     ...
   }: let
     systems = [
       "x86_64-linux"
+      "aarch64-linux"
     ];
 
     eachSystem = f:
@@ -34,6 +36,7 @@
       {
         pkgs,
         nix2container,
+        system,
         ...
       }: let
         site = pkgs.buildNpmPackage {
@@ -66,7 +69,12 @@
 
         image = nix2container.buildImage {
           name = "docker.io/maneeshwije/personal-website";
-          tag = "latest";
+          tag =
+            if system == "x86_64-linux"
+            then "amd64"
+            else if system == "aarch64-linux"
+            then "arm64"
+            else throw "Unsupported system: ${system}";
 
           copyToRoot = site;
 
@@ -102,6 +110,17 @@
         default = image;
 
         inherit site image;
+      }
+    );
+
+    apps = eachSystem (
+      {system, ...}: let
+        image = self.packages.${system}.image;
+      in {
+        push = {
+          type = "app";
+          program = "${image.copyToRegistry}/bin/copy-to-registry";
+        };
       }
     );
 
